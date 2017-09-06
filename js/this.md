@@ -74,7 +74,7 @@ console.log(h()); // def
 ```
 
 ### Arrow Function
-在arrow function被 **"創建"** 時，this會指向當前Execution Context的this所指向的物件上，也就是arrow function中的this完全等於外面一層scope的this的值。且arrow function中的this的值在創建時被綁定就不會再被改變，如`call(), apply()`此類函示無法產生作用。
+在arrow function被 **"創建"** 時，this會指向當前Execution Context的this所指向的物件上，也就是arrow function中的this完全等於外面一層scope的this的值。且arrow function中的this的值在創建時被綁定就不會再被改變，如`call(), apply()`此類函式無法產生作用。
 
 ```JS
 var obj = {
