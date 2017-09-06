@@ -27,3 +27,6 @@ document.getElementById("parent-list").addEventListener("click", function(e) {
     }
 });
 ```
+
+### Reference
+https://davidwalsh.name/event-delegate
