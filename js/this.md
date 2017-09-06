@@ -100,7 +100,7 @@ console.log(fn2()() == window); // true
 ### As a DOM event handler
 當function作為event handler時，function中的this將指向該event handler所被綁定的DOM element上。
 
-```
+```JS
 function q(e) {
   console.log(this);
 }
