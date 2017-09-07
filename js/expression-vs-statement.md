@@ -44,7 +44,7 @@ function expression產生值（此函數），而function declaration產生動�
 在JavaScript中，()裡的程式碼會被當作expression解析（expression context）
 ，因此Immediately Invoked Function Expression才會看起來是這樣：
 
-```
+```JS
 (function() {
   // do something
 })();
