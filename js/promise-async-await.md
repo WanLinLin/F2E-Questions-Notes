@@ -36,6 +36,9 @@ async關鍵字置於含有promise的function前面，使其變成async function�
 
 await關鍵字只能再async function中使用，主要用於會return promise的expression前，等待promise執行完畢後，將其解析成值，若是promise被reject則會丟出error。
 
+> Inside a function marked as async, you are allowed to place the await keyword in front of an expression that returns a promise. When you do, the execution of the async function is paused until the promise is resolved. -- MPJ, Fun Fun Function
+
+
 ```JS
 async function printComments() {
     try {
@@ -60,3 +63,10 @@ getComments()
 
 console.log("I will be printed out before the comments");
 ```
+
+async、await關鍵字可以讓asynchronous code寫起來、讀起來像是synchronous code，將原先需要處理多層callback的地方改寫，讓程式碼排版上更簡潔、理解上更直覺。
+
+## Reference
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
+- https://www.youtube.com/watch?v=568g8hxJJp4
