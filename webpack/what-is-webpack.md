@@ -39,3 +39,5 @@ webpack會依據config file的設定，從entry開始藉由各種檔案的loader
 
 可以在檔名中加上hash，如`app.as23ak4h5.js`讓client知道檔案已經產生變動，需要重新下載新版的檔案
 
+## References
+- https://survivejs.com/webpack/what-is-webpack/

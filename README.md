@@ -1,2 +1,5 @@
 # F2E Notes
-Mainly stores my notes to the F2E Questions of the repo https://github.com/h5bp/Front-end-Developer-Interview-Questions, and also some knowledge related to HTML, CSS, and JavaScript.
+
+It was a repo to store my notes to the F2E Questions of the repo https://github.com/h5bp/Front-end-Developer-Interview-Questions.
+
+However, now I use it to record anything I've learned in web development.

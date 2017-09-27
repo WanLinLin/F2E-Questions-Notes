@@ -8,3 +8,6 @@
 
 
 - 除了自動更新及HMR外，webpack-dev-server也可以使用middleware的方式整合進node server，也可以設定proxy參數與其他伺服器溝通
+
+## Reference
+- https://survivejs.com/webpack/developing/automatic-browser-refresh/
