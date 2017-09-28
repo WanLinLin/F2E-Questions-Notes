@@ -15,9 +15,24 @@ webpack會依據config file的設定，從entry開始藉由各種檔案的loader
 
 - entry：開始掃檔案的地方
 - module：設定各式loader
-- resolve：設定除了node_modules之外特定的掃描原則，如某些副檔名或哪些資料夾
+- resolve：設定掃描原則，例如：
+
+```js
+resolve: {
+  modules: [
+    // makes webpack only resolve in these dirs, 
+    // to improve performance
+    SRC_PATH, 'node_modules'
+  ],
+  // makes webpack only resolve these file extensions
+  extensions: ['.js', '.jsx'],
+}
+```
+
 - output：設定產出檔案的檔名、路徑
 - plugins: 讓webpack做一些除了bundle之外的事，如uglify
+- external: 讓某些imports不被bundle進output file，而在頁面上直接引入
+- module.rules.use: 用特定的rules來套用use中指定的loaders
 
 `webpack.config.js`和`webpackfile.js`是webpack預設的設定檔名，若要使用自定義的設定檔名，使用`--config`來設定參數
 
