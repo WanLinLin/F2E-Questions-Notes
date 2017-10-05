@@ -1,6 +1,6 @@
 # Why Redux
 
-因程式在執行時，mutation及asynchronicity是人類最難以光靠想像就知道state的改變是因為什麼事情的發生，因此會很拿除蟲
+因程式在執行時，mutation及asynchronicity是人類最難以光靠想像就知道state的改變是因為什麼事情的發生，因此會很難除蟲
 
 # Core Concepts
 
@@ -18,7 +18,7 @@
 
 ## action
 
-a `object` describing the action to the state
+an `object` describing the action to the state
 
 ```js
 const action = {
@@ -74,55 +74,8 @@ store.dispach(add(2))
 store.subscribe(listener)
 ```
 
----
+# Reference
 
-# React Redux
+all contents in the basic guide
 
-## Presentational Component
-
-- 目的：component要怎麼呈現在頁面上
-- 要不要管redux：不用管redux
-- 資料讀取：由props讀資料
-- 改變資料：觸發props的callback
-- 怎麼被寫的：手寫出來的
-
-```js
-const Number = (props) = {
-  return (
-    <span onClick={() => onNumberClick()}>
-      {props.number}
-    </span>
-  )
-}
-```
-
-## Container Component
-
-- 目的：component要怎麼運作（資料怎麼抓，state怎麼更新）
-- 要不要管redux：要管redux
-- 資料讀取：由redux的state讀資料
-- 改變資料：dispatch Redux actions
-- 怎麼被寫的：通常是由React Redux的connect產生出來的
-
-```js
-// how to read data
-const mapStateToProps = state => {
-  return {
-    number: state.number
-  }
-}
-
-// how to update state
-const mapDispatchToProps = dispatch => {
-  return {
-    onNumberClick: () => {
-      dispatch(add(1))
-    }
-  }
-}
-
-const  = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Number)
-```
+- http://redux.js.org/docs/basics/
